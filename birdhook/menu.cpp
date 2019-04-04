@@ -24,7 +24,7 @@
 #include "Configuration.hpp"
 #include "MiscScript.h"
 #include "menu.h"
-#include "gettext/libgnuintl.h"
+//#include "gettext/libgnuintl.h"
 
 
 int nWidth, nHeight;
@@ -174,7 +174,7 @@ int menuinit(void)
 	textdomain("zh_CN");*/
 	Init_Language();
 
-	printf("version :%d", libintl_version);
+	//printf("version :%d", libintl_version);
 
 	while (running)
 	{
