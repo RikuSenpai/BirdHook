@@ -126,6 +126,9 @@
     <ClCompile Include="birdhook\ValveBSP\BSPParser.cpp" />
     <ClCompile Include="birdhook\ValveBSP\TraceRay.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{24A93360-0006-46C7-A9F7-7DAA78A58FBA}</ProjectGuid>
