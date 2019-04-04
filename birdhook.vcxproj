@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="birdhook\cheats\ActualAimbot.h" />
+    <ClInclude Include="birdhook\cheats\Bunnyhop.h" />
+    <ClInclude Include="birdhook\cheats\GlowESP.h" />
+    <ClInclude Include="birdhook\cheats\Skinchanger.h" />
+    <ClInclude Include="birdhook\cheats\Triggerbot.h" />
+    <ClInclude Include="birdhook\config.h" />
+    <ClInclude Include="birdhook\Configuration.hpp" />
+    <ClInclude Include="birdhook\csgo\csgo.h" />
+    <ClInclude Include="birdhook\csgo\entity.h" />
+    <ClInclude Include="birdhook\csgo\math.h" />
+    <ClInclude Include="birdhook\csgo\netvars.h" />
+    <ClInclude Include="birdhook\enums.h" />
+    <ClInclude Include="birdhook\gettext\iconv.h" />
+    <ClInclude Include="birdhook\gettext\libgnuintl.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lapi.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lauxlib.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lcode.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lctype.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\ldebug.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\ldo.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lfunc.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lgc.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\llex.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\llimits.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lmem.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lobject.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lopcodes.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lparser.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lprefix.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lstate.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lstring.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\ltable.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\ltm.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lua.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lua.hpp" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\luaconf.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lualib.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lundump.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lvm.h" />
+    <ClInclude Include="birdhook\lua-5.3.5\src\lzio.h" />
+    <ClInclude Include="birdhook\main.h" />
+    <ClInclude Include="birdhook\mem\mem.h" />
+    <ClInclude Include="birdhook\mem\module.h" />
+    <ClInclude Include="birdhook\menu.h" />
+    <ClInclude Include="birdhook\MiscScript.h" />
+    <ClInclude Include="birdhook\nuklear\nuklear.h" />
+    <ClInclude Include="birdhook\nuklear_gdi.h" />
+    <ClInclude Include="birdhook\offsets.h" />
+    <ClInclude Include="birdhook\utils\Color.h" />
+    <ClInclude Include="birdhook\utils\console.h" />
+    <ClInclude Include="birdhook\utils\files.h" />
+    <ClInclude Include="birdhook\utils\MiscUtils.h" />
+    <ClInclude Include="birdhook\utils\ShootManager.h" />
+    <ClInclude Include="birdhook\ValveBSP\BSPFile.hpp" />
+    <ClInclude Include="birdhook\ValveBSP\BSPFlags.hpp" />
+    <ClInclude Include="birdhook\ValveBSP\BSPParser.hpp" />
+    <ClInclude Include="birdhook\ValveBSP\BSPStructure.hpp" />
+    <ClInclude Include="birdhook\ValveBSP\Matrix.hpp" />
+    <ClInclude Include="birdhook\ValveBSP\TraceRay.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="birdhook\config.cpp" />
+    <ClCompile Include="birdhook\Configuration.cpp" />
+    <ClCompile Include="birdhook\csgo\csgo.cpp" />
+    <ClCompile Include="birdhook\csgo\entity.cpp" />
+    <ClCompile Include="birdhook\csgo\netvars.cpp" />
+    <ClCompile Include="birdhook\DLLMain.cpp">
+      <MultiProcessorCompilation Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</MultiProcessorCompilation>
+    </ClCompile>
+    <ClCompile Include="birdhook\lua-5.3.5\src\lapi.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lauxlib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lbaselib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lbitlib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lcode.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lcorolib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lctype.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ldblib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ldebug.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ldo.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ldump.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lfunc.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lgc.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\linit.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\liolib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\llex.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lmathlib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lmem.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\loadlib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lobject.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lopcodes.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\loslib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lparser.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lstate.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lstring.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lstrlib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ltable.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ltablib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\ltm.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lua.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\luac.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lundump.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lutf8lib.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lvm.c" />
+    <ClCompile Include="birdhook\lua-5.3.5\src\lzio.c" />
+    <ClCompile Include="birdhook\mem\mem.cpp" />
+    <ClCompile Include="birdhook\menu.cpp" />
+    <ClCompile Include="birdhook\MiscScript.cpp" />
+    <ClCompile Include="birdhook\offsets.cpp" />
+    <ClCompile Include="birdhook\utils\console.cpp" />
+    <ClCompile Include="birdhook\utils\files.cpp" />
+    <ClCompile Include="birdhook\utils\MiscUtils.cpp" />
+    <ClCompile Include="birdhook\ValveBSP\BSPFile.cpp" />
+    <ClCompile Include="birdhook\ValveBSP\BSPParser.cpp" />
+    <ClCompile Include="birdhook\ValveBSP\TraceRay.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{24A93360-0006-46C7-A9F7-7DAA78A58FBA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>birdhook</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>.\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Build\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>.\birdhook\lib;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Build\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_WINDOWS;_USRDLL;birdhook_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>libiconv.lib;libintl.lib;Msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_WINDOWS;_USRDLL;birdhook_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <SDLCheck>false</SDLCheck>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libiconv.lib;libintl.lib;Msimg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
